@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Press+Start+2P&family=Rubik+Bubbles&display=swap');
+body{
+    margin: 0;
+    background-color:black;
+    color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+.navbar-left{
+    padding-left: 50px;
+    font-family: 'Rubik Bubbles', system-ui;
+    background:linear-gradient(90deg, #ff9933,#ffffff,#138808);
+    color: transparent;
+    background-clip: text;
+    font-size: x-large;
+}
+h1{
+    animation: flicker 1.5s infinite alternate; 
+}
+.logo-image{
+    height: 150px;
+}
+.navbar-right{
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.a-element{
+    padding:10px;
+    margin:10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px ; 
+    font-weight: bold;
+    color: white;
+}
+.home{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+   justify-content:center;
+   height: 100vh;
+}
+.home-left{
+    width:50vw;
+    text-align: right;
+    padding-left: 20px;
+    font-family: 'Press Start 2P', system-ui;
+}
+.home-right
+{
+    max-width: 900%;
+    max-height: 900%;
+    width:40vw;
+    padding-right: 50px;
+}
+    .name{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+.about{
+    font-size: larger;
+    font-family: 'Encode Sans', sans-serif;
+    text-align: center;
+}
+.btn{
+    background-color: aqua;
+    padding:6px;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 4px;
+}        
+.h2{
+    text-align:left;
+font-family: 'Montserrat', sans-serif;
+
+}
+.ol{
+    text-align: left;
+    font-family: 'Encode Sans', sans-serif;
+}
+.projects{
+    padding: 50px;
+    text-align: center;
+}
+.project-h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(59,211,59);
+    letter-spacing:  3px;
+    
+    font-size: 50px;
+    font-style: italic;
+}
+.projects-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.projectss{
+    border:3px rgb(47,168, 47) solid;
+    margin:20px;
+    padding: 20px;
+    width: 400px;
+    height:200px;
+}    
+.p-h1{
+    font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+}
+.p-p
+{
+    color: white;
+    font-size: 20px;
+    font-family: 'Encode Sans', sans-serif;
+}
+.contact{
+    text-align: center;
+}
+.contact-info{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.social-icon-img{
+    height:50px;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+.p-logo{
+    height: 150px;
+}
+.n-logo{
+    height:150px
+}
+.p-s{
+    color: white;
+    font-size: 15px;
+    font-family: 'Encode Sans', sans-serif;
+}
+.cv-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff; /* Text color */
+  background-color: #2ecc71; /* Radiant green color */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cv-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #27ae60; /* Hover state color */
+  transition: left 0.3s ease-in-out;
+}
+
+.cv-button:hover::before {
+  left: 0;
+}
+
+.cv-button span {
+  z-index: 1;
+}
+
+.cv-button:active {
+  transform: scale(0.95); /* Slight scale down on click for animation effect */
+}
+
+
+
+
+.education-section {
+  background-color: #111; /* Dark background color */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* White box shadow */
+  padding: 40px;
+  text-align: center;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+  justify-content: space-between; /* Distribute items with space around */
+  align-items: flex-start; /* Align items at the start of the cross axis (top) */
+}
+
+.education-item {
+  width: 45%; /* Responsive width */
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* White box shadow */
+  text-align: left;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #2ecc71; /* Section heading color */
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #fff; /* University name color */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #ddd; /* Text color */
+  font-size: 18px;
+  line-height: 1.6;
+}
